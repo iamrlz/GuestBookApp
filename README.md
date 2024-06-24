@@ -47,7 +47,7 @@ Now visit http://localhost:8080
 Verify by checking the container ip and hostname (ID):
 ```
 $ docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' my-container
-172.17.0.2
+172.19.0.2
 $ docker inspect -f '{{ .Config.Hostname }}' my-container
 3eefbfbad102
 ```
